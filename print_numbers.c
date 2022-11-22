@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * print_i - prints an integer
  * @i: integer to print
@@ -11,7 +10,6 @@ int print_i(va_list i)
 {
 	int a[10];
 	int j, m, n, sum, count;
-
 
 	n = va_arg(i, int);
 	count = 0;
@@ -41,7 +39,6 @@ int print_i(va_list i)
 	return (count);
 }
 
-
 /**
  * print_d - prints a decimal
  * @d: decimal to print
@@ -52,7 +49,6 @@ int print_d(va_list d)
 {
 	int a[10];
 	int j, m, n, sum, count;
-
 
 	n = va_arg(d, int);
 	count = 0;

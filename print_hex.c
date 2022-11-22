@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * print_hex - prints an unsigned int in hexidecimal form
  * @n: unsigned int to print
@@ -14,7 +13,6 @@ int print_hex(unsigned int n, unsigned int c)
 	unsigned int i, m, sum;
 	char diff;
 	int count;
-
 
 	m = 268435456; /* (16 ^ 7) */
 	if (c)
@@ -52,7 +50,6 @@ int print_x(va_list x)
 	return (print_hex(va_arg(x, unsigned int), 0));
 }
 
-
 /**
  * print_X - takes am unsigned int and prints it in uppercase hex notation
  * @X: unsigned int to print
@@ -63,7 +60,6 @@ int print_X(va_list X)
 {
 	return (print_hex(va_arg(X, unsigned int), 1));
 }
-
 
 /**
  * _pow - calculates an exponent
@@ -77,14 +73,12 @@ static unsigned long _pow(unsigned int base, unsigned int exponent)
 	unsigned int i;
 	unsigned long ans = base;
 
-
 	for (i = 1; i < exponent; i++)
 	{
 		ans *= base;
 	}
 	return (ans);
 }
-
 
 /**
  * print_p - prints an address
@@ -99,7 +93,6 @@ int print_p(va_list p)
 	unsigned int i, sum;
 	unsigned long n, m;
 	char *str = "(nil)";
-
 
 	n = va_arg(p, unsigned long);
 	if (n == 0)
